@@ -60,7 +60,11 @@ pub fn main() !void {
     defer sdl3.quit(init_flags);
 
     // Initialize RNG and create app icon.
-    var prng = std.Random.DefaultPrng.init(@bitCast(std.time.microTimestamp()));
+    var prng = std.Random.DefaultPrng.init(blk: {
+        var seed: u64 = undefined;
+        try std.posix.getrandom(std.mem.asBytes(&seed));
+        break :blk seed;
+    });
     var state = State{
         .surface = try sdl3.surface.Surface.init(32, 32, .array_rgba_32),
         .random = prng.random(),
