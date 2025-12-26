@@ -1,8 +1,9 @@
 zig-sdl3
 ========
+I literally just forked this to make it compatible with the zig master branch
+Maybe I should've contributed to the og project but idk
 
-# ARCHIVED!
-Moved to codeberg under my indie game studio: https://codeberg.org/7Games/zig-sdl3
+Original repo at: https://codeberg.org/7Games/zig-sdl3
 
 A lightweight wrapper to zig-ify SDL3.
 
