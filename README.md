@@ -1,7 +1,7 @@
 zig-sdl3
 ========
-I literally just forked this to make it compatible with the zig master branch
-Maybe I should've contributed to the og project but idk
+I literally just forked this to make it compatible with the zig master branch.
+Maybe I should've contributed to the og project but idk.
 
 Original repo at: https://codeberg.org/7Games/zig-sdl3
 
